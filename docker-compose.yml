@@ -1,0 +1,9 @@
+version: "3.7"
+services:
+  script:
+    build:
+      context: .
+      dockerfile: Dockerfile-script
+    volumes:
+      - ./:/app/
+    command: sleep 3000
